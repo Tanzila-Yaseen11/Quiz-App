@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+ 
+</head>
+<body>
+  <div class="container" id="registration">
+    <img src="Quizz app image.png" alt="Quiz Logo" class="logo">
+    <h1>Welcome to the Quiz</h1>
+    <div class="input-group">
+      <input type="text" id="studentName" placeholder="Enter your name" required>
+    </div>
+    <div class="input-group">
+      <input type="text" id="rollNumber" placeholder="Enter your roll number" required>
+    </div>
+    <button class="btn" onclick="startQuiz()">Start Quiz</button>
+  </div>
+
+  <div class="container" id="quiz" style="display: none;">
+    <h2>Welcome, <span id="displayName"></span> (<span id="displayRoll"></span>)</h2>
+    <div id="question-container">
+
+    </div>
+    <div class="result" id="result" style="display: none;"></div>
+  </div>
+
+
+</body>
+</html>
